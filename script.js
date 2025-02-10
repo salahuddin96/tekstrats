@@ -1,13 +1,16 @@
-// Initialize AOS (Animate On Scroll)
+// script.js
 AOS.init({
-    duration: 1000,
+    duration: 800,
     once: true,
-    easing: 'ease-in-out'
+    easing: 'ease-out-quad'
 });
 
-// Add scroll event listeners
+// Add scroll effect for navigation
 window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    document.querySelector('.glass-nav').style.background = 
-        `rgba(255, 255, 255, ${Math.min(scrolled / 200, 0.1)})`;
+    const nav = document.querySelector('.main-nav');
+    if (window.scrollY > 50) {
+        nav.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
+    } else {
+        nav.style.boxShadow = 'none';
+    }
 });
