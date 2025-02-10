@@ -1,0 +1,49 @@
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a192f;
+    color: #fff;
+}
+
+/* Glassmorphism Navigation */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 1rem 5%;
+}
+
+/* Animated Hero Background */
+.animated-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, 
+        rgba(16, 185, 129, 0.1), 
+        rgba(6, 182, 212, 0.2));
+    z-index: -1;
+    animation: grid-animation 20s linear infinite;
+}
+
+@keyframes grid-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hover Effects */
+.cta-btn {
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Animations (using AOS library) */
+[data-aos] {
+    transition: opacity 0.8s, transform 0.8s;
+}
