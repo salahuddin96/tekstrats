@@ -318,60 +318,49 @@ a:focus {
 .do_section .do_container .arrow-end::before {
   background-image: url(../images/arrow-end.png);
 }
-/* Made chnges from here  */
+/* Made changes from here  */
 
-/* .who_section .row {
+.who_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-} */
-
-.who_section .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap; /* Prevents wrapping to avoid stacking */
-  gap: 50px; /* Adds space between the image and text */
 }
 
 .who_section .img-box img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
 }
 
 .who_section .detail-box {
-  flex: 1;
-  max-width: 50%;
-  padding: 20px;
+  margin-left: 65px;
 }
 
 .who_section .detail-box p {
-  margin-top: 20px;
-  text-align: justify; /* Makes text block more structured */
-  line-height: 1.6;
+  margin-top: 35px;
 }
 
 .who_section .detail-box a {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 8px 30px;
   background-color: #353434;
   border: 1px solid #353434;
   color: #ffffff;
-  border-radius: 20px;
-  margin-top: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
+  border-radius: 20px 20px 0 20px;
+  margin-top: 35px;
 }
 
 .who_section .detail-box a:hover {
   background-color: transparent;
   color: #353434;
-  border-color: #353434;
 }
 
 /* to here */
+
+.formatted-paragraph {
+  text-align: justify; /* Justify text (align left and right edges) */
+  line-height: 1.5;    /* Adjust line height for readability */
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
 .work_section .work_container {
   display: -webkit-box;
   display: -ms-flexbox;
